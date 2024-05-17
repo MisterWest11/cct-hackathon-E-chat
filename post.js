@@ -60,5 +60,5 @@ document.getElementById('postForm').addEventListener('submit', function(event) {
     // Remove the success message after a few seconds
     setTimeout(function() {
         successMessage.remove();
-    }, 5500); // 3 seconds
+    }, 3000); // 3 seconds
 });
