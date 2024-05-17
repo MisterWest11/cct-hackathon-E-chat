@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Page</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Body -->
+    <main>
+        <h1>Create new post</h1>
+        <form id="postForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="text">Text:</label>
+            <textarea id="text" name="text" rows="6" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 City of Cape Town
+    </footer>
+
+    <script src="post.js"></script>
+</body>
+</html>
