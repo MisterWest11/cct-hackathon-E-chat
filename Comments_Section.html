@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Post Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="post">
+            <div class="post-header">Sipho</div>
+            <div class="post-date">May 16, 2024</div>
+            <div class="post-subject">No Electricity & Water</div>
+            <div class="post-content">
+                We have had no water and electricity in the Khayelitsha area for the past 2 weeks.
+                When is this issue going to be fixed.
+            </div>
+            <div class="comments">
+                <div class="comment">
+                    <div class="comment-content">
+                        Have you tried calling them? or visiting their center for assistance?
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-content">
+                        No, i haven't done that.
+                    </div>
+                </div>
+            </div>
+            <div class="comment-form">
+                <form id="commentForm">
+                    <textarea name="comment" id="comment" placeholder="Add a comment..."></textarea>
+                    <div>
+                        <button type="submit">Post Comment</button>
+                    <button onclick="goBack()">Back</button>
+                    </div>
+                </form>
+            </div>
+        
+        </div>
+
+        <!-- Back button -->
+        <!--<button onclick="goBack()">Back</button>-->
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "Posts_Section.html"; // Specify the URL of the Comments Page
+        }
+    </script>
+</body>
+</html>
