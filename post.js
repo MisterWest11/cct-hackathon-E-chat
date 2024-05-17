@@ -18,7 +18,17 @@ document.getElementById('postForm').addEventListener('submit', function(event) {
     posts.push(post);
     localStorage.setItem('posts', JSON.stringify(posts));
 
-    alert('Post submitted successfully!');
+    // Clear the form inputs
+    document.getElementById('postForm').reset();
 
-    // You can redirect the user or do something else here after successful submission
+    // Display success message
+    var successMessage = document.createElement('div');
+    successMessage.id = 'successMessage';
+    successMessage.innerText = 'submitted successfully!';
+    document.body.appendChild(successMessage);
+
+    // Remove the success message after a few seconds
+    setTimeout(function() {
+        successMessage.remove();
+    }, 3000); // 3 seconds
 });
